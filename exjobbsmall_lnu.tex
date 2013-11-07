@@ -25,7 +25,6 @@
 \usepackage[top=2cm, bottom=2.5cm, left=3cm, right=3cm]{geometry} % Ställ in marginaler
 \usepackage{appendix} % Stöd för separat hantering av bilagor
 
-\renewcommand\thesection{\arabic{section}} % Section beter sig som i dokumentklassen article
 \setcounter{secnumdepth}{5} % Fem nivåer av underrubriksnumrering
 \setcounter{tocdepth}{5} % Fem nivåer av underrubriksnumrering i innehållsförteckning
 
@@ -50,12 +49,12 @@
 %----------------------------------------------------------------------------------------
 \newcommand\BackgroundPic{
     \put(-2,-3){
-    \includegraphics[keepaspectratio,scale=0.3]{lnu_etch.png} % Bakgrundsbild
+    \includegraphics[keepaspectratio,scale=0.3]{img/lnu_etch.png} % Bakgrundsbild
     }
 }
 \newcommand\BackgroundPicLogo{
     \put(18,700){
-    \includegraphics[keepaspectratio,scale=0.10]{logo.png} % Logga i övre vänstra hörnet
+    \includegraphics[keepaspectratio,scale=0.10]{img/logo.png} % Logga i övre vänstra hörnet
     }
 }
 
@@ -102,9 +101,9 @@
 \maketitle % Skriv ut titeln
 \restoregeometry
 \clearpage
-%---------------------
+%----------------------------------------------------------------------------------------
 %	Svensk och engelsk version av abstract
-%---------------------
+%----------------------------------------------------------------------------------------
 \selectlanguage{swedish}
 \begin{abstract}
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque convallis arcu elit, sit amet dictum nibh semper id. Quisque non iaculis est. Mauris ornare auctor scelerisque. Sed elementum ipsum nunc, vitae placerat lacus faucibus eu. Donec vestibulum, nisi vel tristique accumsan, massa lorem rhoncus metus, quis mattis eros arcu at dui. Ut quis consequat diam. Integer et nisl id lacus sodales posuere. Integer tristique metus ac posuere consequat. Aliquam gravida mauris vitae cursus posuere. Cras mollis sem vel faucibus fermentum. Duis vitae interdum nunc. Pellentesque egestas cursus turpis, eu lobortis justo ullamcorper quis. Nullam eget dui lacinia, convallis leo imperdiet, ornare justo. Quisque mattis eleifend justo, vel interdum diam molestie sed.
@@ -114,7 +113,7 @@
   The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators. To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental. To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is.The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators.
 \end{abstract}
 \selectlanguage{swedish}
-%-----------------
+%----------------------------------------------------------------------------------------
 \newpage
 \pagenumbering{gobble} % Stäng av sidnumrering för innehållsförteckningssidan
 \tableofcontents % Innehållsförteckning
@@ -122,44 +121,44 @@
 \pagenumbering{arabic} % Påbörja sidnumrering på 1
 
 
-%------------------------------------------------
+%----------------------------------------------------------------------------------------
 %	Rubrik 1
-%------------------------------------------------
+%----------------------------------------------------------------------------------------
 \section{Rubrik 1}
 Enligt \cite{small} är detta en rubrik. Enligt \cite{big} är även detta en rubrik.
-%------------------------------------------------
+%----------------------------------------------------------------------------------------
 %	Underrubrik 2
-%------------------------------------------------
+%----------------------------------------------------------------------------------------
 \subsection{Underrubrik 2}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque convallis arcu elit, sit amet dictum nibh semper id. Quisque non iaculis est. Mauris ornare auctor scelerisque.
-%------------------------------------------------
+%----------------------------------------------------------------------------------------
 %	Under-underrubrik 3
-%------------------------------------------------
-\subsubsection{Under-underrubrik 3}
+%----------------------------------------------------------------------------------------
+\subsubsection{Underrubriksnivå 3}
 Nunc molestie libero in quam commodo, id volutpat justo vehicula. Aliquam tristique leo et ullamcorper dapibus. Sed eu blandit lorem. Phasellus fermentum risus ac risus porttitor consectetur. Nunc euismod ultricies pellentesque. Quisque id dolor lorem. Nulla sollicitudin dignissim quam, a blandit sapien lobortis et.
-%------------------------------------------------
+%----------------------------------------------------------------------------------------
 %	Under-under-underrubrik 4, OBS! \paragraph
-%------------------------------------------------
-\paragraph{Under-under-underrubrik 4}
+%----------------------------------------------------------------------------------------
+\paragraph{Underrubriksnivå 4}
 Fusce suscipit faucibus dui non facilisis. Sed enim tortor, tempor nec mauris et, mollis malesuada orci. Aenean ut ullamcorper eros. Nulla vel magna at sem varius porttitor. Nam scelerisque blandit metus, ac eleifend ante rutrum nec. Fusce dignissim nisi arcu. Suspendisse iaculis odio non risus tempor consectetur. Fusce dapibus quam et nulla euismod vulputate. Vivamus quis mauris et tortor mollis ullamcorper vel luctus metus. Mauris dictum sapien ac ultricies dignissim. Morbi consequat ligula quis ipsum condimentum, ut interdum nibh auctor.
-%------------------------------------------------
+%----------------------------------------------------------------------------------------
 %	Under-under-under-underrubrik 5, OBS! \subparagraph
-%------------------------------------------------
-\subparagraph{Under-under-underrubrik 5}
+%----------------------------------------------------------------------------------------
+\subparagraph{Underrubriksnivå 5}
 Curabitur consectetur nibh sit amet fringilla ornare. Aenean eu massa pharetra odio mollis accumsan. Proin accumsan condimentum pharetra. Maecenas eu nunc vitae erat mattis tincidunt vitae ut leo. Sed mauris mauris, pellentesque sed leo sit amet, molestie aliquam dui. Duis ut elit mollis, facilisis nibh non, egestas est. Fusce egestas at ligula lacinia vehicula. Maecenas bibendum consequat nisl, non suscipit enim.
-%------------------------------------------------
+%----------------------------------------------------------------------------------------
 %	Referenser
 %  IEEE-system med siffror för referenser
 %  Ändra bibliographystyle för annat referenssystem
 %
-%------------------------------------------------
+%----------------------------------------------------------------------------------------
 \newpage
 \bibliographystyle{unsrt}
 \bibliography{referenser}
 \newpage
-%------------------------------------------------
-%	Bilagor, hanteras i separat fil
-%------------------------------------------------
+%----------------------------------------------------------------------------------------
+%	Bilagor, hanteras i separat fil kallad appendix
+%-----------------------------------------------------------------------------------------
 \appendix
 \input{appendix}
 \end{document}
