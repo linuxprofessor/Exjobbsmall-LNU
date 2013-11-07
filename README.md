@@ -4,4 +4,4 @@
 Renderad version finns i PDF-filen.
 
 ----------------
-Licens: Creative Commons BY-NC-SA
+Licens: Creative Commons BY
