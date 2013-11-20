@@ -28,6 +28,12 @@
 \setcounter{secnumdepth}{3} % Fem nivåer av underrubriksnumrering
 \setcounter{tocdepth}{3} % Fem nivåer av underrubriksnumrering i innehållsförteckning
 
+\usepackage{sectsty} % Ändra storlek på section och subsection till 12 punkter
+\sectionfont{\fontsize{12}{15}\selectfont}
+\subsectionfont{\fontsize{12}{15}\selectfont}
+
+\usepackage{csquotes} % Används för att hantera citat
+
 %----------------------------------------------------------------------------------------
 %	Denna del används för att skapa boxen med författare, handledare, etc.
 %----------------------------------------------------------------------------------------
@@ -219,8 +225,6 @@ Detta avsnitt är inte obligatoriskt, men det kan vara bra att ha en beskrivning
 \emph{Inled med lite text som beskriver inneh\aa llet i kapitlet.}\\
 Här beskrivs uppsatsens bakgrund och eller teori. Kapitlet eller kapitlen delas in i valfria relevanta avsnitt. Det är möjligt att ha både ett bakgrundskapitel och ett teorikapitel om man tycker att detta behövs. Teorikapitlet kan komma som nummer 2, men det är också möjligt att lägga metodkapitlet före teorikapitel. Det beror på om man tycker att läsaren behöver känna till teorierna för att förstå tillvägagångssättet för undersökningen. 
 
-
-		
 \subsection{Inledning}
 Teorier beskriver och förklarar hur omvärlden och olika fenomen i den förhåller sig. Teorin används för att analysera, det vill säga beskriva och förklara det man studerar eller som utgångspunkt för att formulera en hypotes. Teorier beskrivs oftast i böcker, men kan även beskrivas i vetenskapliga artiklar. 
 	Teorierna skall sammanfattas och återges kortfattat med referenser till litteraturen. Beskriv teorierna med egna ord. Citat kan användas, men bör göras sparsamt. Kanske inte hela teorin kommer att användas, beskriv då bara den del av teorin som används. Endast relevanta, det vill säga de teorier som man verkligen kommer att använda, ska beskrivas. Man bör dock visa på att man gjort ett medvetet val av teorier. Därmed kan man skriva några korta meningar om att dessa teorier finns, men dessa teorier har valts därför att… och så vidare. Man skriver ofta mycket i detta kapitel till att börja med som man sedan får ta bort. Se till att verkligen ”Kill your darlings”, dvs tänk efter om det verkligen passar in! Man skall också beskriva hur man kommer att använda teorierna i sin analys. Om man inte kan beskriva detta är det nog troligt att teorin inte heller är användbar och därmed bör tas bort. Om man beskriver flera teorier skall man också göra en tydlig koppling mellan teorierna. 
@@ -232,46 +236,42 @@ Alla påståenden som man gör i detta kapitel måste kunna styrkas med referens
 Löpande referenser kan göras på i huvudsak två olika sätt, se exempel 1 och 2. Det kan vara trevligt att växla lite mellan de två olika sätten, beroende på vad som passar. Man skall alltid använda författaren efternamn och publiceringsår. Detta räcker för att man skall kunna hitta referensen i referenslistan.\\
 
 {\em Exempel 1:}\\
-Mening mening mening mening ([\#]). 
+Mening mening mening mening \cite{sven01}. 
 
-Det finns många fina blommor (\cite{sven01}).\\
+Det finns många fina blommor \cite{sven01}.
 
 {\em Exempel 2:}\\
-Enligt Efternamn ([\#]) mening mening mening…
+Enligt Efternamn [\#] mening mening mening…
 
-Enligt Svensson (\cite{sven01}) finns det många fina blommor.\\
+Enligt Svensson \cite{sven01} finns det många fina blommor.\\
 
 Ibland finns det två författare till ett verk, då skriver man som i exempel 3. Om det finns tre eller fler författare skriver man som i exempel 4. Ibland vill man stärka ett påstående med två eller fler referenser, då gör man som i exempel 5. Referenserna ordnas då i bokstavsordning. \\
 
 {\em Exempel 3:}\\
-Enligt Efternamn1 och Efternamn2 ([\#]) mening mening mening mening. 
+Enligt Efternamn1 och Efternamn2 [\#] mening mening mening mening. 
 
-Enligt Svensson och Öberg finns många fina blommor (\cite{sven02}).\\
+Enligt Svensson och Öberg finns många fina blommor \cite{sven02}.\\
 
 {\em Exempel 4:}\\
-Enligt efternamn et al, [\#] mening mening mening mening.
+Enligt efternamn et al, \cite{Creswell2014} mening mening mening mening.
 
 Enligt Svensson et al, \cite{sven07} finns det många fina blommor.\\
 
 {\em Exempel 5:}\\ 
-Mening mening mening mening ( [\#], [\#]). 
+Mening mening mening mening [\#], [\#]. 
 
-Det finns många fina blommor ( \cite{sven01}, \cite{sven02} ).\\
+Det finns många fina blommor \cite{sven01}, \cite{sven02}.\\
 
 Figurer och tabeller skall också ha en referens i dessa anges också oftast sidnummer. Även när man gör citat skall man ange sidnummer. Exempel 6 visar hur man skriver kortare citat och exempel 7 visar hur man skriver längre citat.\\
 
 {\em Exempel 6:}\\ 
-Text text. ”Citat citat citat…”  ([\#], sidnummer). Text text text text text och så vidare. 
+Text text. ”Citat citat citat…”  [\#, s. sidnummer]. Text text text text text och så vidare. 
 
-”Det finns många finfina blommor” (\cite{Creswell2014}, s 23). \\
+\quote{Det finns manga finfina blommor} \cite[s. 23]{Creswell2014} \\
 
-{\em Exempel 7:}\\ 
-Text text text text text och så vidare. 
-
-Citat citat citat citat citat. Citat citat citat citat citat citat.\\
-Citat citat citat citat citat citat. Citat citat citat citat citat citat.\\
-([\#], sidnummer)
-
+{\em Exempel 7:}
+\hyphenblockcquote{swedish}[s. 1]{Creswell2014}{
+Text text text text text och så vidare. Citat citat citat citat citat. Citat citat citat citat citat citat. Citat citat citat citat citat citat. Citat citat citat citat citat citat. Text text text text text och så vidare. Citat citat citat citat citat. Citat citat citat citat citat citat. Citat citat citat citat citat citat. Citat citat citat citat citat citat.}
 Text text text text text och så vidare. \\
 
 Detta var de vanligaste fallen av hur man skriver löpande referenser. Det finns också ett antal mer speciella fall, exempelvis rapporter utgivna av myndigheter och webbsidor. Se därför också i metodlitteraturen kring hur man gör löpande referenser. 
