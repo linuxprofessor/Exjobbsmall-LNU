@@ -24,6 +24,7 @@
 \usepackage[absolute]{textpos} % Möjlighet att absolutpositionera text
 \usepackage[top=2cm, bottom=2.5cm, left=3cm, right=3cm]{geometry} % Ställ in marginaler
 \usepackage{appendix} % Stöd för separat hantering av bilagor
+\usepackage[parfill]{parskip} % Tar bort indentering vid ny rad
 
 \setcounter{secnumdepth}{3} % Fem nivåer av underrubriksnumrering
 \setcounter{tocdepth}{3} % Fem nivåer av underrubriksnumrering i innehållsförteckning
@@ -143,7 +144,7 @@ Utifrån att ha läst sammanfattningen eller abstraktet skall man tydligt först
 %	Svensk och engelsk version av förord
 %----------------------------------------------------------------------------------------
 
-\textbf {\large{Förord}}\\
+\noindent\textbf{\large{Förord}}\\
 
 \noindent Man kan ha ett förord i uppsatsen om man vill, men det behövs inte. I detta kan man få skriva mer personliga reflektioner kring uppsatsskrivandet. Det kan exempelvis vara varför man själv personligen tyckte att det var ett intressant ämne att skriva om eller om man upplevt det som särskilt svårt eller givande att skriva uppsatsen. 
 
@@ -268,7 +269,9 @@ Figurer och tabeller skall också ha en referens i dessa anges också oftast sid
 {\em Exempel 6:}\\ 
 Text text. ”Citat citat citat…”  [\#, s. sidnummer]. Text text text text text och så vidare. 
 
-\quote{Det finns manga finfina blommor} \cite[s. 23]{Creswell2014} \\
+\begin{quotation}
+Det finns manga finfina blommor \cite[s. 23]{Creswell2014} \\
+\end{quotation}
 
 {\em Exempel 7:}
 \hyphenblockcquote{swedish}[s. 1]{Creswell2014}{
@@ -348,7 +351,7 @@ Undersökningar med koppling till patienter inom hälso- och sjukvård skall all
 
 \newpage
 
-\section{Resultat/Emperi}
+\section{Resultat/Empiri}
 \emph{Inled med lite text som beskriver innehållet i kapitlet.}\\
 Vad man beskriver i detta kapitel beror väldigt mycket på den studie som man har gjort. Indelningen i underrubriker bygger därmed också på det. I denna del skall det redovisas rena resultat, utan analyser och diskussioner. Det är en slags sammanfattning av de data som man har samlat in. Man skall göra en rak och mer eller mindre objektiv beskrivning. Bara relevant material skall tas med. Kapitlet skrivs företrädesvis i presens. 
 		
