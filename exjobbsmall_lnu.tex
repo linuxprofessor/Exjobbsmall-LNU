@@ -25,6 +25,7 @@
 \usepackage{appendix} % Stöd för separat hantering av bilagor
 \usepackage[parfill]{parskip} % Tar bort indentering vid ny rad
 \usepackage{csquotes} % Används för att hantera citat
+\usepackage{float}
 
 \setcounter{secnumdepth}{3} % Fem nivåer av underrubriksnumrering
 \setcounter{tocdepth}{3} % Fem nivåer av underrubriksnumrering i innehållsförteckning
@@ -287,7 +288,7 @@ Detta var de vanligaste fallen av hur man skriver löpande referenser. Det finns
 \subsection{Figurtexter}
 Alla figurer och tabeller skall vara numrerade och ha en rubrik/förklarande text samt eventuell referens. Figurer är alla typer av modeller, bilder och även grafer och diagram. Numreringen ska göras för varje kapitel och då får första figuren i kapitel 2 nummer 2.1, nästa figur får nummer 2.2, första bilden i kapitel 3 får nummer 3.1 och så vidare. Tabeller har separat numrering, d v s rapportens första och andra tabell i kapitel två får då nummer 2.1 och 2.2.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
 \includegraphics[scale=0.5]{img/cirkvad}
 \end{center}

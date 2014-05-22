@@ -324,6 +324,7 @@ ENTRY
     title
     type
     url
+    urldate
     volume
     year
     yearfiled
@@ -1946,6 +1947,10 @@ FUNCTION {format.url}
       space.normal 'this.status.space :=
       space.normal 'prev.status.space :=
       quote.no 'this.status.quote :=
+      urldate empty$
+      { "there is url but no urldate in " cite$ * warning$ }
+      { " [Accessed: " * urldate * "]" * }
+      if$
     }
   if$
 }
