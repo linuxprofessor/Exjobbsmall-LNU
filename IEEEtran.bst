@@ -1949,7 +1949,7 @@ FUNCTION {format.url}
       quote.no 'this.status.quote :=
       urldate empty$
       { "there is url but no urldate in " cite$ * warning$ }
-      { " [Accessed: " * urldate * "]" * }
+      { " [Kontrollerad: " * urldate * "]" * }
       if$
     }
   if$
