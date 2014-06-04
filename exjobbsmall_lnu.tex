@@ -25,7 +25,12 @@
 \usepackage{appendix} % Stöd för separat hantering av bilagor
 \usepackage[parfill]{parskip} % Tar bort indentering vid ny rad
 \usepackage{csquotes} % Används för att hantera citat
-\usepackage{float}
+\usepackage{float} % Används för att placera figurer och tabeller rätt.
+
+% Används för att texten ska hamna ovanför tabeller och för bra mellanrum.
+\floatstyle{plaintop}
+\restylefloat{table}
+\usepackage[tableposition=bottom]{caption}
 
 \setcounter{secnumdepth}{3} % Fem nivåer av underrubriksnumrering
 \setcounter{tocdepth}{3} % Fem nivåer av underrubriksnumrering i innehållsförteckning
@@ -100,6 +105,8 @@
 \date{} % Dagens datum, tomt i detta fallet. Använd \today för dagens datum.
 
 \begin{document}
+\renewcommand{\figurename}{Figur} % Byt ut "Figure" mot "Figur".
+\renewcommand{\tablename}{Tabell} % Byt ut "Table" mot "Tabell".
 \pagenumbering{gobble}
 \newgeometry{left=5cm}
 \AddToShipoutPicture*{\BackgroundPic} % Lägger in backgrundsbild på första sidan
@@ -298,15 +305,16 @@ Alla figurer och tabeller skall vara numrerade och ha en rubrik/förklarande tex
 
 Figurer har figurtexten under figuren, se figur 2.1, medan tabeller har texten ovanför, se tabell 2.1. Alla figurer, tabeller och diagram skall också hänvisas till från den löpande texten och figuren eller tabellen skall placeras i så nära anslutning som möjligt till denna hänvisning. Figurer får läggas in mellan stycken, men texten får då enbart vara i linje med figuren och inte flöda tätt med figuren (det vill säga det får inte vara någon text till höger eller vänster om figuren). \\
 
-\begin{center}
-Tabell 2.1: En tabell med siffror.\\[0.2cm]
-
-$\begin{tabular} {||r|r|r||} \hline
+\begin{table}[H]
+\centering
+\begin{tabular}{|r|r|r|}\hline
 346 & 5 & 987 \\ \hline
 989 & 2078 & 654 \\ \hline
 45 & 765 & 2345 \\ \hline
-\end{tabular}$
-\end{center}
+\end{tabular}
+\caption{En tabell med siffror.}
+\label{tabell1}
+\end{table}
 
 \newpage
 
